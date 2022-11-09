@@ -1,3 +1,3 @@
 FROM cikupin/php-apache2
 
-ADD ./* /var/www/html/
+COPY ./ /var/www/html/
