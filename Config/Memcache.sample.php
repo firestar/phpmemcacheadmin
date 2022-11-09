@@ -18,10 +18,10 @@ return array (
   array (
     'Default' =>
     array (
-      '127.0.0.1:11211' =>
+      getenv("MEMCACHE_HOST").getenv("MEMCACHE_PORT") =>
       array (
-        'hostname' => '127.0.0.1',
-        'port' => '11211',
+        'hostname' => getenv("MEMCACHE_HOST"),
+        'port' => getenv("MEMCACHE_PORT"),
       ),
     ),
   ),
